@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 22, 22);
+    border-radius: 0 0 32px 32px;
+}
+header a{
+    padding: 5vh 6vw;
+    text-decoration:none;
+    color: wheat;
+    font-size: 1.1rem;
+    
+}
+body {
+    background: rgb(81,24,172);
+    background: radial-gradient(circle, rgba(81,24,172,1) 39%, rgba(108,24,172,1) 64%, rgba(172,24,161,1) 99%);
+}
