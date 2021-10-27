@@ -1,15 +1,13 @@
-var express = require('express');
-var router = express.Router();
+const midlePass = require('../midleware/midleToken');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { 
-  
-  title: 'Express',
-  style: 'stylesheets/index.css'
+const express = require('express'),
+router = express.Router(),
+controllerExpense = require('../controllers/controllerExpress/controllerExpenses'),
+midleToken = require('../midleware/midleToken')
 
+/* GET Expenses Page. */
+router.get('/', controllerExpense.index);
 
-  });
-});
-
+/* Criando nova expense. */
+router.post('/', midlePass.pass,controllerExpense.createExpense);
 module.exports = router;

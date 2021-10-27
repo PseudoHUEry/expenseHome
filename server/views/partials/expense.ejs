@@ -1,0 +1,14 @@
+<article class="expenses__box"> 
+
+<% for (expense of bd) { 
+    if(expense.id >= 1) { %>
+
+<div class="expense__item">
+    <h1><%= expense.title %></h1>
+    <h2><%= expense.createBy %></h2>
+    <p><%= `R$ ${expense.value},00` %></p>
+    <p><%= expense.expenseDate %></p>
+</div>
+
+<% }} %>
+</article>
