@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.section--dash{
+    justify-self: center;
+    align-self: center;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2vh;
+}
+
+.section--dash>div {
+    text-align: center;
+    justify-content: center;
+   border-radius: 16px;
+    margin-top: 8vh;
+    border: black solid 3px;
+    background-color: cornflowerblue;
+}
+
+.section--dash>div>h1 {
+    margin:16px;
+}
